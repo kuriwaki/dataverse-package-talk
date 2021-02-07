@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+
+
+# Dir
+libs
+data
+*_files/
+
+# Output
+*.html
+
+
