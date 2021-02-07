@@ -1,0 +1,103 @@
+---
+title: "The New `dataverse` Client Package"
+author: "__Shiro Kuriwaki__"
+institute: "Harvard University<br>(To be Assistant Professor, Yale University)"
+date: "February 2021<br>Toronto Data Workshop"
+output:
+  xaringan::moon_reader:
+    css: ["default", "xaringan_style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '5:4'
+      beforeInit: "https://platform.twitter.com/widgets.js"
+---
+
+class: middle
+
+
+```{r include = FALSE}
+library(tidyverse)
+library(knitr)
+library(dataverse)
+
+# data types
+library(haven)
+
+# to strip off later
+library(readxl)
+```
+
+
+```{r include = FALSE}
+weo <- read_excel("data/input/WEO-2018.xlsx")
+data(gss_cat)
+```
+
+
+```{r setup, include = FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+# Table of Contents
+
+* [<b>Dataverse Workflow</b>](#ch_workflow)
+* [<b>dataverse clients: Brief History</b>](#ch_history)
+* [<b>get_*() functions</b>](#ch_get)
+* [<b>pyDataverse</b>](#ch_python)
+
+
+---
+layout: true
+<div class="my-footer"><span>Workflow</span></div>
+---
+class: middle
+name: ch_workflow
+
+# Dataverse workflow
+
+## Replication _of_ datasets
+## Dataverse
+## Workflow in the GUI
+
+---
+layout: true
+<div class="my-footer"><span>Dataverse History</span></div>
+---
+class: middle
+name: ch_history
+
+# Brief History of Dataverse Clients
+
+## dvn
+## dataverse (2017)
+## dataverse (2020)
+
+---
+layout: true
+<div class="my-footer"><span>Dataset retrieval</span></div>
+---
+class: middle
+name: ch_get
+
+# Dataset Retrieval
+
+## get_dataframe_by_*
+## Non-tabular datasets
+## Options: versions, variables
+
+---
+layout: true
+<div class="my-footer"><span>pyDataverse</span></div>
+---
+class: middle
+name: ch_python
+
+# Python vs. R clients
+
+
+---
+
